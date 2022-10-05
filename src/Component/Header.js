@@ -3,6 +3,7 @@ import header from './header.css'
 import resume from '../images/resume.jpg'
 
 import Button from '@mui/material/Button';
+import Editor from './Editor.js'
 
 
 import {
@@ -12,6 +13,18 @@ import {
   Link
 } from "react-router-dom";
 function Header(){
+	
+	const sections={
+		basicinfo: "Basic Info",
+		workExp: "work Experience",
+		project: "project",
+		education: "Education",
+		achievement: "Achevement",
+		summary: "Summary",
+		other: "other",
+		
+	};
+	
 
 return(
 <div className="container">
@@ -26,22 +39,16 @@ return(
 
  <div className="right">
 <img src={resume} alt='Resume' />
+</div>
 
 
- </div>
-
-<Button sx={{ mr:"70%"}} variant="contained">Build Your resume</Button>
+<button type="button" className="btn btn-primary ">Build Your Resume<i className="bi bi-arrow-down-short"></i></button>
+<div>
+<Editor sections={sections}/>
+</div>
 </div>
 
 );
-
-
-
-
-
- 
-
-
 }
 
 export default Header;
