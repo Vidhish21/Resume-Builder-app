@@ -3,27 +3,16 @@ import header from './header.css'
 import resume from '../images/resume.jpg'
 
 import Button from '@mui/material/Button';
-import Editor from './Editor.js'
-
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+
+
 function Header(){
-	
-	const sections={
-		basicinfo: "Basic Info",
-		workExp: "work Experience",
-		project: "project",
-		education: "Education",
-		achievement: "Achevement",
-		summary: "Summary",
-		other: "other",
-		
-	};
+
 	
 
 return(
@@ -42,13 +31,13 @@ return(
 </div>
 
 
-<button type="button" className="btn btn-primary ">Build Your Resume<i className="bi bi-arrow-down-short"></i></button>
+
 <div>
-<Editor sections={sections}/>
+
 </div>
+
 </div>
 
 );
 }
-
 export default Header;

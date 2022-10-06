@@ -1,0 +1,25 @@
+.container{
+	width:550px;
+	height:450px;
+	box-shadow:1px 1px 4px  rgba(0.12,0.12,0.12,0.12) ;
+	display:flex;
+	flex-direction:column;
+	gap:30px;
+	padding-top:5px;
+	}
+	.header{
+		display:flex;
+		gap:10px;
+		overflow:auto;
+		border-bottom:1px solid rgba(0,0,0,0.12);
+		
+		
+	}
+	.header .section{
+		padding:10px;
+		border-bottom:2px solid transparent;
+		font-weight:500;
+		font-size:1 rem;
+		white-space:nowrap;
+		
+	}
