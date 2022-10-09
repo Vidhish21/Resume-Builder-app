@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Body.module.css"
 import Editor from "./Editor.js"
+import { ArrowDown } from 'react-feather';
 
 function Body()
 {
@@ -9,12 +10,12 @@ const colors=["#48bb78","#48bb78","#48bb78","#48bb78"];
 	
 	const sections={
 		basicinfo: "Basic Info",
-		workExp: "work Experience",
-		project: "project",
+		workExp: "Work Experience",
+		project: "Project",
 		education: "Education",
-		achievement: "Achevement",
+		achievement: "Achievement",
 		summary: "Summary",
-		other: "other",
+		other: "Other",
 		
 	};
 
@@ -26,15 +27,12 @@ return(
 	     <div className={styles.colors}>
    
    {colors.map((item)=>(
-   <span
-   key={item}
-   style={{backgroundColor:item}}
-   className={styles.color}
+   <span key={item}  style={{backgroundColor:item}} className={styles.color}
    />
    ))}
 
          </div>
-		 <button type="button" className="btn btn-primary ">Build Your Resume</button>
+		 <button className={styles.btn}>Download <ArrowDown/></button>
     </div>
 	<Editor sections={sections}/>
 </div>
