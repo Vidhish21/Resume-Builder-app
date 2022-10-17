@@ -19,6 +19,12 @@ const colors=["#48bb78","#48bb78","#48bb78","#48bb78"];
 		
 	};
 
+  /*  // State Related to store information....
+	//const [resumeInformation,setResumeInformation]=useState({
+		
+	//});*/
+
+
 
 return(
 <div className={styles.container}>
@@ -27,7 +33,10 @@ return(
 	     <div className={styles.colors}>
    
    {colors.map((item)=>(
-   <span key={item}  style={{backgroundColor:item}} className={styles.color}
+   <span
+   key={item}  
+   style={{backgroundColor:item}} 
+   className={styles.color}
    />
    ))}
 

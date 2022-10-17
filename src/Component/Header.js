@@ -1,14 +1,7 @@
 import React from "react";
-import header from './header.css'
+import styles from './header.css'
 import resume from '../images/resume.jpg'
 
-import Button from '@mui/material/Button';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 
 function Header(){
@@ -16,27 +9,19 @@ function Header(){
 	
 
 return(
-<div className="container">
-
-   < div className="left">
-
- <p >A <span>Resume </span>that stands out!</p>
-  <p>Design Winning <span>Resume</span> With us!</p>
-
-
-   </div>
-
- <div className="right">
-<img src={resume} alt='Resume' />
-</div>
-
-
-
-<div>
-
-</div>
-
-</div>
+<div className={styles.container}>
+      <div className={styles.left}>
+        <p className={styles.heading}>
+          A <span>Resume</span> that stands out!
+        </p>
+        <p className={styles.heading}>
+          Make your own resume. <span>It's free</span>
+        </p>
+      </div>
+      <div className={styles.right}>
+        <img src={resume} alt="Resume" />
+      </div>
+    </div>
 
 );
 }
